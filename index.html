@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4736dbf96c.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        .font-manrope {
+           font-family: "Manrope", sans-serif;
+            
+}
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary': '#E76F51',
+                'bg-btn':'rgb(171, 239, 95);'
+
+              },
+            },
+          },
+        }
+      </script>
+     
+</head>
+<body class="font-manrope">
+    <!--header section-->
+    <header class=" md:container mx-auto ">
+        <!--navbar-->
+        <div class="navbar py-10 bg-gradient-to-t from-gray-50 to-gray-50 h-full">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="flex gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 mt-4 bg-lime-500 rounded-full">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg> <h3 class="text-5xl font-bold">Rinterio</h3>
+            </div>
+             
+            
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-2">
+              <li><a href=""> Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Protfolio</a></li>
+              <li><a href="">Blogs</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-6">
+        
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-white rounded-full">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-white rounded-full">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+            
+            
+            <button class=" btn  rounded-lg bg-lime-400 text-black  font-bold">Book Consult<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-black  text-white rounded-full">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+            </button>
+    
+          </div>
+        </div>
+        
+        
+
+        
+
+
+    </header>
+    <!--main section-->
+    <main class="md:container mx-auto">
+      <!--view details section-->
+      <section class="justify-center items-center bg-gradient-to-t bg-gray-50 ">
+        <div class="card bg-base-100 w-full">
+          <figure class="px-10 pt-10">
+            <img
+              src="./assets/banner.png"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-5xl font-bold">A barn house of this design has a striking appearance</h2>
+            <p class="text-sm py-10">A barn house, also known as a barndominium, is a style of home that combines the rustic charm of a traditional barn with the comforts of modern living.<br/> These homes are typically inspired by the classic design of agricultural barns but are adapted for residential use. </p>
+            <div class="card-actions">
+              <button class=" btn bg-lime-200 text-black ">View Details<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 bg-lime-400 rounded-full">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About us section-->
+      
+      <section class="bg-gray-100 mx-auto ">
+        <div class="px-5 py-5">
+          <img   class="border-dashed border-2 border-sky-500 py-2 px-2" src="./assets/Vector.png" alt="">
+        </div>
+        <div class="    lg:flex gap-5 px-12">
+          <!--text part-->
+          <div class="fex flex-row justify-center items-center px-5">
+            <div>
+              <button class="btn bg-white  rounded-3xl" ><i class="fa-solid fa-arrow-right"></i>About Us</button>
+              <h3 class="text-4xl font-bold">We design thoughtful, <br/>liveable spaces</h3>
+            <p class="text-lg  pt-3 pb-3">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+            </div>
+            <!--card part-->
+            <div class="py-4 mb-5 grid  gap-5  ">
+              <div class="bg-white rounded-xl flex py-5 px-12 gap-10 w-full  lg:w-full h-22">
+                <div>
+                  <img class="w-full h-full" src="./assets/commercial.png" alt="">
+                </div>
+                <div>
+                  <h3 class="font-bold ">Commercial</h3>
+                  <p >The barn house captivates with its blend <br/> of rustic charm and modern.</p>
+                </div>
+                
+              </div>
+              <div class="bg-white rounded-xl flex py-5 px-12 gap-10 w-full  lg:w-full h-22 ">
+                <div>
+                  <img class="w-full h-full" src="./assets/residential.png" alt="">
+                </div>
+                <div>
+                  <h3 class="font-bold ">Residential</h3>
+                  <p >The barn house captivates with its blend <br/> of rustic charm and modern.</p>
+                </div>
+                
+              </div>
+              
+
+            </div>
+            
+          </div>
+          <!--image part-->
+          <div class="pt-12" >
+            <div class="pt-9">
+              <img class="  h-full w-full items-center" src="./assets/Rectangle.png" alt="">
+    
+            </div> 
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!--WORK PROCESS SECTION-->
+      <section class= "bg-gradient-to-t bg-gray-100 mx-auto pt-20  " >
+        <!--text section-->
+        <div class="text-center">
+          <button class=" btn bg-white  rounded-3xl" ><i class="fa-solid fa-arrow-right"></i>How its works</button>
+      <h3 class="text-3xl font-bold pt-5">Our Works Process</h3>
+      <p class="text-sm pt-5">It seems like you might be referring to a "barn house." Are you looking for information about barn-style homes, their design, or something else related to a barn house?</p>
+
+        </div>
+      
+       <!--card-->
+       <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  py-10 px-10">
+        <div class="rounded-lg shadow-lg bg-pink-200 overflow-hidden">
+          <img class=" pt-4 p-4" src="./assets/concept.png" alt="">
+          <div class="p-4">
+              <h2 class="font-bold text-xl ">Concept</h2>
+          <p class="text-gray-600">A barn house, also known as a barn-style home, is a type of residential architecture. </p>
+          </div>
+
+      </div>
+      <div class="rounded-lg shadow-lg bg-yellow-300 overflow-hidden">
+        <img class=" pt-4 p-4" src="./assets/flow-chart.png" alt="">
+        <div class="p-4">
+            <h2 class="font-bold text-xl ">Design process</h2>
+        <p class="text-gray-600">A barn house, also known as a barn-style home, is a type of residential architecture. </p>
+        </div>
+
+        </div>
+        <div class="rounded-lg shadow-lg bg-green-200 overflow-hidden">
+          <img class=" pt-4 p-4" src="./assets/vision.png" alt="">
+          <div class="p-4">
+              <h2 class="font-bold text-xl ">SuperVision</h2>
+          <p class="text-gray-600">A barn house, also known as a barn-style home, is a type of residential architecture. </p>
+          </div>
+  
+          </div>
+          <div class="rounded-lg shadow-lg bg-blue-200 overflow-hidden">
+            <img class=" pt-4 p-4" src="./assets/budget-planning.png" alt="">
+            <div class="p-4">
+                <h2 class="font-bold text-xl ">budget-planning</h2>
+            <p class="text-gray-600">A barn house, also known as a barn-style home, is a type of residential architecture. </p>
+            </div>
+     
+            </div>
+    
+
+       </div>
+
+      </section >
+      <!--latest protpolio-->
+      <section class="bg-white mx-auto items-center pt-10">
+        <!--text section-->
+        <div class="text-center">
+          <button class=" btn bg-green-200  rounded-3xl" ><i class="fa-solid fa-arrow-right"></i>Explore Our Latest Works</button>
+      <h3 class="text-3xl font-bold pt-5">Our Latest Protfolio</h3>
+      <p class="text-sm pt-5">It seems like you might be referring to a "barn house." Are you looking for information about barn-style homes, their design, or something else related to a barn house?</p>
+
+        </div>
+        <div class=" pt-10 mx-20 grid  justify-center items-center  lg:grid-cols-1">
+          <!--image section-->
+          <div class="  grid grid-cols-4 grid-rows-2 gap-4 lg:w-full ">
+           <div class=" h-full w-full  rounded-xl">
+            <img class="border-dotted border-l-purple-800  " src="./assets/img1.png" alt="">
+
+           </div>
+           <div class=" bg-white rounded-xl col-span-2 py-5 px-5 ">
+              <h3 class="text-lg font-bold">Commercial</h3>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              <button class=" btn   rounded-lg bg-lime-400 text-black  font-bold">View Details<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-black  text-white rounded-full">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+              </button>
+           </div>
+           <div class=" bg-white rounded-xl  ">
+              <img class="" src="./assets/img2.png" alt="i">
+           </div>
+           <div class="  rounded-xl">
+            <img src="./assets/img3.png" alt="">
+
+           </div>
+           <div class="  rounded-xl">
+            <img src="./assets/img4.png" alt="">
+
+           </div>
+           <div class=" rounded-xl">
+            <h3 class="text-lg font-bold">Commercial</h3>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              <button class=" btn   rounded-lg bg-lime-400 text-black  font-bold">View Details <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-black  text-white rounded-full">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+              </button>
+            
+
+           </div>
+           <div class=  rounded-xl">
+            <img class="" src="./assets/img5.png" alt="">
+
+           </div>
+           
+          </div>
+          <!--text section-->
+          
+   </div>
+
+
+
+      </section>
+      <!--form section-->
+      <section class="pt-10" >
+        <div class="bg-[url('assets/bg.jpg')] h-screen bg-cover bg-center ">
+          <div>
+            <div class="pt-10 items-center justify-center text-center">
+              <button class="btn bg-green-400  rounded-3xl" ><i class="fa-solid fa-arrow-right"></i>Lets connect</button>
+              <h3 class="text-4xl font-bold">Let’s Discuss Next Project</h3>
+            <p class="text-lg  pt-3 pb-3">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+            </div>
+            <div class="grid lg:grid-cols-4 pb-5  justify-center px-10 py-10 md:grid-cols-4 gap-1 sm:col-span-4 text-center  ">
+              <div class="col-span-2 mx-auto ">
+                <input type="text" placeholder="First Name*" class="w-96 h-8 rounded-xl p-4">
+              </div>
+              <div class="col-span-2  ">
+                <input type="text" placeholder="Last Name*" class="w-96 h-8 rounded-xl p-4">
+              </div>
+              <div class="col-span-2  ">
+                <input type="number" placeholder="Phone number*" class="w-96 h-8 rounded-xl p-4">
+              </div>
+              <div class="col-span-2  ">
+                <input type="email" placeholder="email*" class="w-96 h-8 rounded-xl p-4">
+              </div>
+            </div>
+            <div class="col-span-4  mx-24 ">
+              <input type="textarea" placeholder="Write your message here*" class=" h-32  w-full px-5 py-10 text-start rounded-xl">
+            </div>
+            <div class="pt-3 items-center justify-center text-center mx-24">
+              <button class=" btn bg-lime-200 text-black w-full h-3    items-center">Send Mail<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 bg-lime-400 rounded-full ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+              </button>
+
+            </div>
+            
+            
+          </div>
+          
+        </div>
+
+      </section>
+      
+
+
+    </main>
+    <!--footer section-->
+      <footer class="footer footer-center bg-black  p-5">
+        <div>
+          <div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5 mt-4 bg-lime-500 rounded-full">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg> <h3 class="text-5xl font-bold text-white">Rinterio</h3>
+          </div>
+          <div>
+            <p class="text-gray-400">It seems like you might be referring to a "barn house." Are you looking for information about barn-style homes, their design, or something else related to a barn house?</p>
+          </div>
+
+        </div>
+        <div class="navbar-center gap-4 lg:flex">
+          <ul class="menu menu-horizontal text-white px-2">
+            <li><a href=""> Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Protfolio</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="flex">
+          <button class=" btn  rounded-lg bg-lime-400 text-black  font-bold">Book Consult<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-black  text-white rounded-full">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+          </button>
+
+        </div>
+        
+
+      </footer>
+
+
+      
+    
+    
+</body>
+</html>
